@@ -1,0 +1,16 @@
+Web servers are what we ping whenever we request something on the browser or 
+http requests etc.
+
+Web servers can be custom, or can even be utilised from the cloud.
+
+Most server-client interaction is done using http/https requests.
+
+This is a 2 message communication:
+
+1. Request message: sent by the user
+2. Response message: response from the server
+
+Both these messages have 2 major components:
+
+1. Headers
+2. Body (Request/Response)
