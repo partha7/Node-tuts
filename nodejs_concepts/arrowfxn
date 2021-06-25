@@ -1,0 +1,5 @@
+Arrow functions don't bind their own "this", 
+they take "this" from the context they were created in.
+althought makes them poor candidates for method
+
+traditional function used to bind their own this in their scope.

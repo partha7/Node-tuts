@@ -1,0 +1,4 @@
+JavaScript is a single threaded language. Although we can use the above methods to perform
+async tasks. So under the hood node will be executing the underlying functionalities in
+the functions that are made async, such as : I/O etc., and thus allow the rest of the code 
+to be executed. Having said that JS execution will still happen synchronously.
