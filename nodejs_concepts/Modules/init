@@ -1,0 +1,5 @@
+To load a global module we just need to require('http')
+Doing this will never look for any file with the same name.
+For us to require a file, we will always have to add " ./ " before the name.
+./ -> for relative path
+/ -> for absolute path
