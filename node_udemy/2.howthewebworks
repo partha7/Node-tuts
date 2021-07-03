@@ -1,0 +1,30 @@
+There are client server interaction for most of web applications to work. The client sends request to a URL which will basically have a domain name.
+
+------------------------------------------------------------------------------------------------------
+
+SO this query is sent to the DNS for IP address lookup. The process is:
+
+1. First the request goes to the recursive resolver which can be operated by our ISP. This recursive resolver knows which DNS to query for the actual data for the web page.
+
+2. It first asks the root server which has information about all the top level domains such as .com etc.
+
+3. The top level domain name server stores information about all the second level domains such as xyz.com. So when our query reaches the TLD server, it returns as response the IP address associated with that domain name.
+
+4. The DNS returns the IP address to the recursive resolver.
+
+5. The RR lets the browser know the IP address and thus the browser can send a request to that IP address to get the content.
+
+------------------------------------------------------------------------------------------------------
+
+Once the browser hits a request to the IP it will reach to our server and our server code will get executed.
+That is where we handle the reuest and send back the necessary response back to the browser or wherever the request was made.
+
+These requests can be made using 2 protocols mostly:
+
+1. Http -> for sending/receiving requests. (un-encrypted)
+2. Https -> secure connection of the same, the content is encrypted such that on spoofing the data is not visible. We need to enable SSL connection and launch an SSL server for this.
+
+
+
+
+

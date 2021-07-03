@@ -1,0 +1,10 @@
+Javascript could only be run in the browser but with node.js we can run JS on any server or machine. It uses the Google V8 server to compile the JS code. The V8 engine is written in c++ thus providing a lot of underlying functionalities that were not accessible through the browser. 
+We only need to provdide the mapping for the functionalities.
+While the one disadvantage of node.js is that we cannot access the DOM.
+
+One major advantage is that node can listen to our requests as well as we can write code for what happens to those requests.
+
+There are 2 ways we can run node.js code.
+1> REPL -> the command line. For single line execution
+2> Files -> This is run using node
+
